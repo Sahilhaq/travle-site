@@ -627,12 +627,14 @@ a {
 
 .page-section {
     padding: 1.2rem 0;
+    
 }
 
 @media (min-width: 800px){
 
 .page-section {
         padding: 4.5rem 0
+    
 }
     }
 
@@ -671,7 +673,7 @@ a {
 @media (min-width: 1200px){
 
 .page-section--testimonials {
-             background: url('/app/assets/images/testimonials-bg.jpg') top center no-repeat;
+             background: url('/app/assets/images/testimonials-bg.jpg')  top center no-repeat;
              background-size: cover
        
     }
@@ -1245,5 +1247,19 @@ a {
             padding: 12px 0;
             background-color: transparent
     }
+    }
+
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 
